@@ -13,6 +13,7 @@ namespace AtteckServer
         static async Task Main(string[] args)
         {
 
+            //CHEK
             //await GetDataAsync();
             ////Console.WriteLine(await GetDataAsync());
             //Console.WriteLine(await ReadFileAsinc(@"C:\Users\internet\source\repos\AtteckServer\TextFile1.txt"));
