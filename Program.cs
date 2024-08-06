@@ -13,20 +13,26 @@ namespace AtteckServer
         static async Task Main(string[] args)
         {
 
-            //CHEK
             //await GetDataAsync();
             ////Console.WriteLine(await GetDataAsync());
             //Console.WriteLine(await ReadFileAsinc(@"C:\Users\internet\source\repos\AtteckServer\TextFile1.txt"));
             //Console.WriteLine("recived data");
 
-            Task<string> TaskA = GetDataFromServiceAAsinc();
-            Task<string> TaskB = GetDataFromServiceBAsinc();
+            //Task<string> TaskA = GetDataFromServiceAAsinc();
+            //Task<string> TaskB = GetDataFromServiceBAsinc();
 
-            await Task.WhenAll(TaskA, TaskB);
+            //await Task.WhenAll(TaskA, TaskB);
 
-            Console.WriteLine(TaskA.Result);
-            Console.WriteLine(TaskB.Result);
+            //Console.WriteLine(TaskA.Result);
+            //Console.WriteLine(TaskB.Result);
+         
+
+            Node<double> node1 = new Node<double>(3.5);
+            Node<double> node2 = new Node<double>(5.8, node1);
+            Console.WriteLine(node1.Tostring());
+            Console.WriteLine(node2.Tostring());
             Console.ReadLine();
+
 
         }
 
